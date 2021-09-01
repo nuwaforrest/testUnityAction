@@ -47,8 +47,8 @@ jobs:
         with:
             targetPlatform: StandaloneWindows
             
-      - name: Unity - Return License
-        uses: game-ci/unity-return-license@v1.1
+      #- name: Unity - Return License
+      #  uses: game-ci/unity-return-license@v1.1
 
 
       # Upload Build
