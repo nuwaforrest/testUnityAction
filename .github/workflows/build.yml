@@ -56,5 +56,9 @@ jobs:
           name: Build-${{ matrix.targetPlatform }}
           path: build/${{ matrix.targetPlatform }}
 
-      - name: Unity - Return License
-        uses: game-ci/unity-return-license@v1.1
+
+      # Return License
+      - name: Return license
+        uses: webbertakken/unity-return-license@v1
+        if: always()
+
