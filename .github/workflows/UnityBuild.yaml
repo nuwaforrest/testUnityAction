@@ -9,7 +9,7 @@ jobs:
     strategy:
       matrix:
         unity-tag: [2019.2.9f1-windows]
-unityDockerLicense.ulf.enc
+
     steps:
     - uses: actions/checkout@master
    #- run: openssl aes-256-cbc -d -in Unity_v2019.x.ulf-cipher -k ${CYPHER_KEY} -md md5 >> ./License.ulf
