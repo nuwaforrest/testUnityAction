@@ -46,6 +46,9 @@ jobs:
             UNITY_SERIAL: ${{ secrets.UNITY_SERIAL }}
         with:
             targetPlatform: StandaloneWindows
+            
+      - name: Unity - Return License
+        uses: game-ci/unity-return-license@v1.1
 
 
       # Upload Build
@@ -54,8 +57,3 @@ jobs:
         with:
           name: Build-${{ matrix.targetPlatform }}
           path: build/${{ matrix.targetPlatform }}
-          
-        # Return License
-        - name: Return license
-          uses: game-ci/unity-return-license@v1
-          if: always()
